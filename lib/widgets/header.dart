@@ -1,5 +1,4 @@
 import 'package:flutter_web/material.dart';
-
 import 'package:lets_find_your_things/utils/my_color.dart';
 import 'package:lets_find_your_things/utils/my_string.dart';
 import 'package:lets_find_your_things/utils/responsive_widget.dart';
@@ -30,7 +29,7 @@ class _HeaderState extends State<Header> {
   //Builds navigation links at the right top of landing page
   Widget buildHeaderLinks() {
     if (ResponsiveWidget.isSmallScreen(context))
-      return Image.asset('assets/menu.png', width: 25, height: 25);
+      return Image.network('assets/menu.png', width: 25, height: 25);
     else
       return Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
