@@ -47,7 +47,7 @@ class SubscribeButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-          Image.asset(
+          Image.network(
           emailImage,
           color: MyColors.white1,
           width: ResponsiveWidget.isSmallScreen(context)
@@ -76,7 +76,7 @@ class SubscribeButton extends StatelessWidget {
         SizedBox(
           width: ResponsiveWidget.isMediumScreen(context) ? 6 : 8,
         ),
-        Image.asset(
+        Image.network(
           emailImage,
           color: MyColors.white1,
           width: ResponsiveWidget.isMediumScreen(context) ? 12 : 20,

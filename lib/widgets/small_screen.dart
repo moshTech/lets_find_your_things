@@ -40,7 +40,7 @@ class SmallScreen extends StatelessWidget {
                   height: 30,
                 ),
                 Center(
-                  child: Image.asset(
+                  child: Image.network(
                     Strings.backgroundImage,
                     scale: 1,
                   ),
