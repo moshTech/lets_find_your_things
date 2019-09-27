@@ -12,7 +12,7 @@ class LargeScreen extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          addBackground(),
+          addBackgroundImage(),
           addWelcomeText(),
         ],
       ),
@@ -20,7 +20,7 @@ class LargeScreen extends StatelessWidget {
   }
 
   //Adds background Image
-  Widget addBackground() {
+  Widget addBackgroundImage() {
     return FractionallySizedBox(
       alignment: Alignment.centerRight, //to keep images aligned to right
       widthFactor: .6, //covers about 60% of the screen width
@@ -53,12 +53,12 @@ class LargeScreen extends StatelessWidget {
             RichText(
               text: TextSpan(
                   text: Strings.welcomeTo,
-                  style: TextStyle(fontSize: 60, color: MyColors.blue4),
+                  style: TextStyle(fontSize: 55, color: MyColors.blue4),
                   children: [
                     TextSpan(
                         text: Strings.ftf,
                         style: TextStyle(
-                            fontSize: 60,
+                            fontSize: 55,
                             fontWeight: FontWeight.bold,
                             color: Colors.black54))
                   ]),

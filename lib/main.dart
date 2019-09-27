@@ -1,5 +1,6 @@
 import 'package:flutter_web/material.dart';
 import 'package:lets_find_your_things/home.dart';
+import 'package:lets_find_your_things/utils/themes.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,9 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter to fly !',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: MyAppThemes.AppThemeBlue(context),
       home: MyHomePage(),
     );
   }
