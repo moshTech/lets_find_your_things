@@ -61,13 +61,13 @@ class _HeaderState extends State<Header> {
           height: 40,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                  colors: [MyColors.blue1, MyColors.blue2],
+                  colors: [Theme.of(context).primaryColor, Theme.of(context).secondaryHeaderColor],
                   begin: Alignment.bottomRight,
                   end: Alignment.topLeft),
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                    color: MyColors.blue3.withOpacity(0.3),
+                    color: Theme.of(context).accentColor.withOpacity(0.3),
                     offset: Offset(0, 8), //Shadow starts at x=0, y=8
                     blurRadius: 8)
               ]),
@@ -96,7 +96,7 @@ class _HeaderState extends State<Header> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             gradient: LinearGradient(
-                colors: [MyColors.blue1, MyColors.blue2],
+                colors: [Theme.of(context).primaryColor, Theme.of(context).secondaryHeaderColor],
                 begin: Alignment.bottomRight,
                 end: Alignment.topLeft),
           ),
