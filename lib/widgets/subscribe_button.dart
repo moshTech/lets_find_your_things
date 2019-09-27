@@ -12,10 +12,10 @@ class SubscribeButton extends StatelessWidget {
       child: Container(
         height: 40,
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Theme.of(context).primaryColor, Theme.of(context).secondaryHeaderColor],
-                begin: Alignment.bottomRight,
-                end: Alignment.topLeft),
+            gradient: LinearGradient(colors: [
+              Theme.of(context).primaryColor,
+              Theme.of(context).secondaryHeaderColor
+            ], begin: Alignment.bottomRight, end: Alignment.topLeft),
             borderRadius: BorderRadius.circular(20.0),
             boxShadow: [
               BoxShadow(
@@ -47,7 +47,7 @@ class SubscribeButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-          Image.network(
+        Image.network(
           emailImage,
           color: MyColors.white1,
           width: ResponsiveWidget.isSmallScreen(context)
