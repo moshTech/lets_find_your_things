@@ -38,10 +38,10 @@ flutter:
     - assets/menu.png
     #- assets/flutter-to-fly-creds.json
     
-#  fonts:
-#    - family: Indie Flower
-#      fonts:
-#        - asset: fonts/IndieFlower.ttf
+  fonts:
+    - family: Indie Flower
+      fonts:
+        - asset: fonts/IndieFlower.ttf
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

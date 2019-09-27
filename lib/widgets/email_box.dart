@@ -38,7 +38,14 @@ class EmailBox extends StatelessWidget {
               ),
               Expanded(
                 flex: 2,
-                child: SubscribeButton(),
+                child: Theme(
+                  data: ThemeData(
+                    primaryColor: MyColors.orange1,
+                    secondaryHeaderColor: MyColors.orange2,
+                    accentColor: MyColors.orange3,
+                  ),
+                  child: SubscribeButton(),
+                ),
               )
             ],
           ),
