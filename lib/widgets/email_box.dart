@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:lets_find_your_things/utils/my_color.dart';
 import 'package:lets_find_your_things/utils/my_string.dart';
 import 'package:lets_find_your_things/utils/responsive_widget.dart';

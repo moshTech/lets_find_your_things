@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:lets_find_your_things/utils/my_color.dart';
 import 'package:lets_find_your_things/utils/my_string.dart';
 
@@ -24,7 +24,7 @@ class LargeScreen extends StatelessWidget {
     return FractionallySizedBox(
       alignment: Alignment.centerRight, //to keep images aligned to right
       widthFactor: .6, //covers about 60% of the screen width
-      child: Image.network(
+      child: Image.asset(
         Strings.backgroundImage,
         scale: .85,
       ),

@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:lets_find_your_things/home.dart';
 
 void main() => runApp(MyApp());

@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:lets_find_your_things/utils/my_color.dart';
 import 'package:lets_find_your_things/utils/my_string.dart';
 import 'package:lets_find_your_things/utils/responsive_widget.dart';
@@ -47,7 +47,7 @@ class SubscribeButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-          Image.network(
+          Image.asset(
           emailImage,
           color: MyColors.white1,
           width: ResponsiveWidget.isSmallScreen(context)
@@ -76,7 +76,7 @@ class SubscribeButton extends StatelessWidget {
         SizedBox(
           width: ResponsiveWidget.isMediumScreen(context) ? 6 : 8,
         ),
-        Image.network(
+        Image.asset(
           emailImage,
           color: MyColors.white1,
           width: ResponsiveWidget.isMediumScreen(context) ? 12 : 20,

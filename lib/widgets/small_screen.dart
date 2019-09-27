@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:lets_find_your_things/utils/my_color.dart';
 import 'package:lets_find_your_things/utils/my_string.dart';
 
@@ -40,7 +40,7 @@ class SmallScreen extends StatelessWidget {
                   height: 30,
                 ),
                 Center(
-                  child: Image.network(
+                  child: Image.asset(
                     Strings.backgroundImage,
                     scale: 1,
                   ),
