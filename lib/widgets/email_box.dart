@@ -12,8 +12,8 @@ class EmailBox extends StatelessWidget {
       padding: EdgeInsets.only(
         left: 4.0,
         right: ResponsiveWidget.isSmallScreen(context) ? 4 : 74,
-        top: 10,
-        bottom: 40,
+        top: 0,
+        bottom: ResponsiveWidget.isSmallScreen(context) ? 10 : 40,
       ),
       child: Container(
         height: 60,

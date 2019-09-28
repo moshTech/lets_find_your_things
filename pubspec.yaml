@@ -36,7 +36,7 @@ flutter:
     - assets/email.png
     - assets/flutter_image.jpg
     - assets/menu.png
-    #- assets/flutter-to-fly-creds.json
+    - assets/find_it.json
     
   fonts:
     - family: Indie Flower

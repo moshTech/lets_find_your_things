@@ -5,8 +5,7 @@ class Strings {
   static const String hello = "Hello!";
   static const String welcomeTo = "Let's ";
   static const String ftf = "Find your stuff together !";
-  static const String subscribeText =
-      "Don't forget to Subscribe to our newsletter";
+  static const String subscribeText = "Suscribe to keep informed";
   static const String email_hint = "Email address please";
   static const String subscribeButton = "Subscribe";
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lets_find_your_things/utils/my_color.dart';
 import 'package:lets_find_your_things/utils/my_string.dart';
+import 'package:lets_find_your_things/utils/widgets_lib.dart';
 
 import 'email_box.dart';
 
@@ -11,7 +12,7 @@ class SmallScreen extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.all(40),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -37,7 +38,7 @@ class SmallScreen extends StatelessWidget {
                       ]),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 Center(
                   child: Image.asset(
@@ -46,23 +47,20 @@ class SmallScreen extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 12.0, top: 20),
+                  padding: EdgeInsets.only(left: 4.0, top: 10),
                   child: Text(Strings.subscribeText),
                 ),
-                SizedBox(
-                  height: 30,
-                ),
+//                SizedBox(
+//                  height: 30,
+//                ),
                 EmailBox(),
-                SizedBox(
-                  height: 30,
-                ),
               ],
             ),
           ),
-          // Padding(
-          //   padding: EdgeInsets.all(8.0),
-          //   child: factBot(context),
-          // ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: factBot(context),
+          ),
         ],
       ),
     );
